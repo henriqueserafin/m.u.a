@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seleção e Criação de Comunidades</title>
+  <link rel="stylesheet" href="comuna.css" >
+  
+
+</head>
+<body>
+    
+  <div class="container">
+    <h1>Comunidades</h1>
+    
+    <div class="form-group">
+      <label for="comunidadeSelect">Selecione uma comunidade:</label>
+      <select id="comunidadeSelect" onchange="entrarNaComunidade()">
+        <option value="">Escolha uma comunidade</option>
+      </select>
+    </div>
+    
+    <div class="form-group">
+      <label for="novaComunidade">Criar nova comunidade:</label>
+      <input type="text" id="novaComunidade" placeholder="Digite o nome da nova comunidade">
+      <button onclick="criarComunidade()">Criar</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

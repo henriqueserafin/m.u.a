@@ -7,13 +7,18 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #f6f5f7;
+    background-image: url(/App/img/pexels-cottonbro-7128752.jpg);
+    background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+    background-position: center; /* Centraliza a imagem no corpo */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin: 0; /* Remove margens padrão */
 }
+
 
 h1 {
     font-weight: bold;
@@ -57,11 +62,13 @@ button:active {
     padding: 20px;
     max-width: 900px;
     width: 100%;
+    
 }
 
 .task-container {
     width: 100%;
     margin-top: 20px;
+    
 }
 
 .card {
@@ -73,6 +80,7 @@ button:active {
     padding: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     position: relative;
+    
 }
 
 .card h2 {

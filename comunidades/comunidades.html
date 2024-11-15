@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Comunidade</title>
+    <link rel="stylesheet" href="comunidades.css">
+    
+</head>
+<body>
+    
+    <header>
+        <h1>Comunidade</h1>
+    </header>
+
+    <main>
+        <section id="chat">
+            <h2>Chat</h2>
+            <div id="chat-box">
+                <!-- Mensagens aparecerão aqui -->
+            </div>
+            <form id="chat-form">
+                <input id="chat-input" type="text" placeholder="Digite sua mensagem..." required>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section id="calendar">
+            <h2>Calendário</h2>
+            <h3>Novembro</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dom</th>
+                        <th>Seg</th>
+                        <th>Ter</th>
+                        <th>Qua</th>
+                        <th>Qui</th>
+                        <th>Sex</th>
+                        <th>Sáb</th>
+                    </tr>
+                </thead>
+                <tbody id="calendar-body">
+                    <!-- Dias serão gerados dinamicamente -->
+                </tbody>
+            </table>
+            <div id="event-modal" class="hidden">
+                <h3>Adicionar Evento</h3>
+                <p id="selected-date"></p>
+                <input id="event-input" type="text" placeholder="Descrição do evento">
+                <button id="save-event">Salvar</button>
+                <button id="close-modal">Fechar</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Comunidade Web</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
