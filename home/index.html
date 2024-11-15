@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUA - Gestão Acadêmica Inteligente</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="shortcut icon" href="/home/css/img/logo-favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/home/css/mua.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="#home" class="logo">MUA</a>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#planos">Planos</a>
+            <a href="#contato">Contato</a>
+        </div>
+        <button class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </button>
+        <button style="font-size: 24px;" class="go-back" onclick="window.history.back()">
+            <i class="fa fa-sign-out"></i> Sair
+        </button>
+        
+    </nav>
+    
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Organize seus estudos de forma inteligente</h1>
+        <p>O MUA é a plataforma perfeita para gerenciar suas demandas acadêmicas, criar comunidades de estudo e alcançar seu potencial máximo.</p>
+        <a href="#planos" class="cta-button">Comece Agora</a>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <h2 class="section-title">Por que escolher o MUA?</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fas fa-tasks feature-icon"></i>
+                <h3>Gestão Eficiente</h3>
+                <p>Organize todas as suas atividades acadêmicas em um só lugar, com lembretes e prazos.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-users feature-icon"></i>
+                <h3>Comunidades</h3>
+                <p>Crie e participe de grupos de estudo, compartilhe conhecimento e tire dúvidas.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-chart-line feature-icon"></i>
+                <h3>Acompanhamento</h3>
+                <p>Monitore seu progresso e desempenho com relatórios detalhados.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Section -->
+    <section id="sobre" class="sobre">
+        <h2 class="section-title">Sobre Nós</h2>
+        <div class="sobre-content">
+            <p>O MUA foi desenvolvido com a missão de transformar a forma como os estudantes gerenciam suas atividades acadêmicas. Nosso software proporciona ferramentas intuitivas para organização dos estudos, criação de comunidades e compartilhamento de conhecimento.</p>
+            <p>Com foco na eficiência e colaboração, ajudamos estudantes a alcançarem seus objetivos acadêmicos através de uma plataforma moderna e intuitiva.</p>
+        </div>
+    </section>
+
+    <!-- Planos Section -->
+    <section id="planos" class="planos">
+        <h2 class="section-title">Nossos Planos</h2>
+        <div class="planos-grid">
+            <div class="plano-card">
+                <h3>Básico</h3>
+                <div class="preco">R$ 0</div>
+                <div class="periodo">para sempre</div>
+                <ul class="beneficios">
+                    <li>Gestão de tarefas básica</li>
+                    <li>Participação em comunidades</li>
+                    <li>Lembretes de prazos</li>
+                </ul>
+                <a href="#" class="cta-button">Começar Grátis</a>
+            </div>
+            <div class="plano-card plano-popular">
+                <span class="popular-badge">Mais Popular</span>
+                <h3>Mensal</h3>
+                <div class="preco">R$ 49,90</div>
+                <div class="periodo">por mês</div>
+                <ul class="beneficios">
+                    <li>Todos os recursos do plano Básico</li>
+                    <li>Criação de comunidades ilimitadas</li>
+                    <li>Relatórios avançados</li>
+                    <li>Integração com calendário</li>
+                    <li>Suporte prioritário</li>
+                </ul>
+                <a href="./checkout.html" class="cta-button">Assinar Agora</a>
+            </div>
+            <div class="plano-card">
+                <h3>Anual</h3>
+                <div class="preco">R$ 39,90</div>
+                <div class="periodo">por mês</div>
+                <ul class="beneficios">
+                    <li>Todos os recursos do plano Premium</li>
+                    <li>API personalizada</li>
+                    <li>Gerenciamento de equipe</li>
+                    <li>Suporte 24/7</li>
+                    <li>Treinamento personalizado</li>
+                </ul>
+                <a href="./checkout.html" class="cta-button">Assinar Agora</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato Section -->
+    <section id="contato" class="contato">
+        <h2 class="section-title">Entre em Contato</h2>
+        <div class="form-container">
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Enviar Mensagem</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 MUA - Todos os direitos reservados</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>

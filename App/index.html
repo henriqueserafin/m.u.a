@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Notificações</title>
+    <link rel="stylesheet" href="/App/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-container sign-in-container">
+            <form id="addTaskForm">
+                <h1>Adicionar Notificação</h1>
+                <input type="text" id="taskTitle" placeholder="Título" required>
+                <textarea id="taskDescription" placeholder="Descrição" required></textarea>
+                <input type="date" id="taskDate" required>
+                <select id="taskColor" required>
+                    <option value="">Escolha a cor</option>
+                    <option value="green">Verde (Longo prazo)</option>
+                    <option value="yellow">Amarelo (Mediano)</option>
+                    <option value="red">Vermelho (Urgente)</option>
+                </select>
+                <button type="submit">Adicionar</button>
+            </form>
+        </div>
+
+        <div class="form-container">
+            <h1>Notificações</h1>
+            <div id="taskContainer" class="task-container">
+                <!-- Os cards serão adicionados dinamicamente -->
+            </div>
+        </div>
+    </div>
+
+    <script src="/App/script.js"></script>
+</body>
+
+</html>

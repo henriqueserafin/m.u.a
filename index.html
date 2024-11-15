@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Double Slider SignIn/SignUp Form</title>
+    <link rel="stylesheet" href="slider/style.css">
+    <script src="https://kit.fontawesome.com/33762d5ec2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <form action="/home/index.html">
+                <h1>Crie sua conta no M.U.A</h1>
+                <input type="text" placeholder="Seu nome">
+                <input type="email" placeholder="Seu email">
+                <input type="password" placeholder="Sua senha">
+                <button>Cadastre-se</button>
+            </form>
+        </div>
+
+        <div class="form-container sign-in-container">
+            <form action="/home/index.html">
+                <div class="signin-spacing">
+                    <h1>Login</h1>
+                </div>
+                <span>Use seu email para logar</span>
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Paswword">
+                <a href="#">
+                    Esqueceu sua senha?
+                <button>Entrar</button>
+              
+
+            </form>
+        </div>
+
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Bem vindo ao M.U.A!</h1>
+                    <p>To keep connected with us please login with your personal info</p>
+                    <button class="ghost" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Cadastre-se no M.U.A aqui!</h1>
+                    <p>Entre com seu dados para se cadastrar com a gente!</p>
+                    <button class="ghost" id="signUp">Cadastro</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="slider/main.js"></script>
+</body>
+
+</html>
